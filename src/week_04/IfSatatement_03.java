@@ -10,16 +10,17 @@ public static void main(String[] args) {
 	Scanner scan = new Scanner(System.in);
 	double not=scan.nextDouble(); //45
 	
-	if(not<100) {
-		System.out.println("AA");
-	}else if(not<80) {
-		System.out.println("BB");
+	if(not<45) {
+		System.out.println("DD");
 	}else if(not<60) {
 		System.out.println("CC");
-	}else if(not<50) {
-		System.out.println("DD");
+	}else if(not<80) {
+		System.out.println("BB");
+	}else if(not<=100) {
+		System.out.println("AA");
 	}
 	
+	//
 	
 	
 }
