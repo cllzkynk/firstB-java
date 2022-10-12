@@ -2,6 +2,8 @@ package week_02;
 
 import java.util.Scanner;
 
+import week_04.StringManipulationPractise;
+
 public class Scanner_01 {
 
 	public static void main(String[] args) {
@@ -25,12 +27,12 @@ public class Scanner_01 {
 		System.out.println(kilo);
 		
 	 */
-		System.out.print("Lutfen adinizi giriniz :");
-		String ad=scan.nextLine();
-		System.out.println(ad);
+		//System.out.print("Lutfen adinizi giriniz :");
+		//String ad=scan.nextLine();
+		//System.out.println(ad);
 		
 		
-		
+		StringManipulationPractise.createPass("Fatma", "SAKIR", (short) 1996, "Berlin");
 		
 		
 		
