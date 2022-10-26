@@ -15,13 +15,16 @@ public class StringManipulation01 {
 		 * bosluk iceremez
 		 * sadece harf ve rakam kullanabilir
 		 */
-     //abcd@bb.ali
+          //abcd@bb.ali
 		
 		Scanner scan=new Scanner(System.in);
 		System.out.println("Email adresinizi giriniz: ");
 		
+		
+		
 		String mail=scan.next();
 		int sayac=0;
+		mail.split("");
 		
 		if(mail.contains("@")) {
 			System.out.println("@ kontrolu basarili");
@@ -37,8 +40,8 @@ public class StringManipulation01 {
 		}else {
 			System.out.println("@ den once de bisiler olali haci abe");
 		}
-	int noktaninYeri=	mail.indexOf('.');
-	 int aradakikaraktersayisi  = noktaninYeri-atinYeri;
+	 int noktaninYeri=	mail.indexOf('.');
+	 int aradakikaraktersayisi  = noktaninYeri-atinYeri-1;
 	 if(aradakikaraktersayisi>=2) {
 		 System.out.println("aradaki karakter testi tamam");
 		 sayac=sayac+1;
@@ -63,7 +66,7 @@ public class StringManipulation01 {
 	 System.out.println(atinYeri);
 	 System.out.println(noktaninYeri);
 	 System.out.println(aradakikaraktersayisi);
-	 System.out.println(mail.substring(mail.length()-4, mail.length()-1));
+	 
 		
 		scan.close();
 	}
