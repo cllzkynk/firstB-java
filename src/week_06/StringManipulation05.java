@@ -30,10 +30,11 @@ public class StringManipulation05 {
 		name=name.substring(0, 1).toUpperCase()+name.substring(1, name.length());
 		lastName=lastName.substring(0, 1).toUpperCase()+lastName.substring(1, lastName.length());
  //////
-	
-		id=     id.substring(id.length()-4, id.length());
-		System.out.println(id);
-		
+	 //kimlik no 11 haneli olacak son 4 u gorunecek demekki 7 tane yildiz lazim
+		id= "*******"+id.substring(id.length()-4, id.length());
+		////7tane//
+	 
+		System.out.println(name+" "+lastName+"\n"+id);
 	}
 
 }
