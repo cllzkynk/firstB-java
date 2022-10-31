@@ -11,7 +11,7 @@ public class StringManipulation05 {
 		 3)Ad ve soyadin ilk harfleri buyuk diger harfleri kucuk olmali
 		 4)Kimlik numarasinin son 4 rakami haric hepsi * yapilmali
 		 			Ornek: Ali Can *******1234
-		 			12345678 9778
+		 			123456789778
 		*/
 		Scanner scan=new Scanner(System.in);
 		System.out.println("isminiz: ");
@@ -29,12 +29,14 @@ public class StringManipulation05 {
 
 		name=name.substring(0, 1).toUpperCase()+name.substring(1, name.length());
 		lastName=lastName.substring(0, 1).toUpperCase()+lastName.substring(1, lastName.length());
- //////
+ 
 	 //kimlik no 11 haneli olacak son 4 u gorunecek demekki 7 tane yildiz lazim
-		id= "*******"+id.substring(id.length()-4, id.length());
+		id= id.substring(0,1)+"******"+id.substring(id.length()-4, id.length());
 		////7tane//
 	 
 		System.out.println(name+" "+lastName+"\n"+id);
+		
+		 scan.close();
 	}
 
 }
