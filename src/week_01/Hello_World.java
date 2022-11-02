@@ -1,4 +1,5 @@
 package week_01;
+import week_07.MethodCreation02;
 
 public class Hello_World {
 	//public
@@ -22,9 +23,12 @@ public class Hello_World {
 		sayHello2();
 		 
 	
-		  System.out.print("Hello World-1");
+		  System.out.println("Hello World-1");
 		  
 			 //compile
+		  
+		  MethodCreation02.kimlikGoster("Ankara", "Malkara", "12365478922");
+		  
 
 	}
 

@@ -40,6 +40,8 @@ public class MethodCreation01 {
 		kimlikGoster(a,str);
 		
 		
+	
+		
 		
 		System.out.println("main sonu");
 	}

@@ -1,6 +1,7 @@
 package week_05;
 
 import week_07.MethodCreation02;
+
 import java.util.Scanner;
 
 public class Odev01 {
@@ -33,7 +34,11 @@ public class Odev01 {
 		
 		
 		
-		MethodCreation02.kimlikGoster("Ayse","Fatma","12345678947");
+		MethodCreation02.kimlikGoster("Ayse","Fatma","123456789117");
+		
+		MethodCreation02.kimlikGoster("ali","VELI","12345678557");
+		
+		MethodCreation02.kimlikGoster("mahmUT","IBRAMvbh cgjfyudj","12345678987");
 	
 		
 
