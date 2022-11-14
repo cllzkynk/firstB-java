@@ -33,7 +33,9 @@ public class MethodPractice {
 	}
 
 	public static void ortalamaHesapla(int not1, int not2, String name, String lastName) {
+		
 		System.out.println(name+" . "+lastName+" takil "+      (     (  not1+not2 )/2   )                                   );
+		
 	}
 
 	public static void ortalamaHesapla(String name, String lastName,  int not1, int not2) {

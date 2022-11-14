@@ -22,7 +22,7 @@ public class MethodPractice02 {
 		String name2 = scan.next();
 
 		System.out.println(yerlestir(name1, name2));
-
+		yerlestir(name1, name2);
 		scan.close();
 
 	}
