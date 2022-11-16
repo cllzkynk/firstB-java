@@ -37,7 +37,7 @@ public class ForPractice04 {
 		
  
 		
-		
+		input.close();
 
 	}
 
