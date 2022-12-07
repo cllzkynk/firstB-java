@@ -27,6 +27,7 @@ public class Scope {
 
 		
 		denemeMetodu(str);
+		trymetodu();
 		
 		
 	//	String str=null;
@@ -37,6 +38,11 @@ public class Scope {
 		
 		System.out.println(denemeMetodu("xcfbdrfb fg ")+ "    En son ben calistim  ben  str2 yim ");
 
+	}
+
+	private static void trymetodu() {
+		//System.out.println(denemeMetodu());
+		
 	}
 
 	private static String denemeMetodu(String xxxxxxxxxyyyyyyyy) {
