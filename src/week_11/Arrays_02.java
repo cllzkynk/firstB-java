@@ -55,6 +55,45 @@ for (int i : arr3) {
 
 System.out.println(minInt);
 
+int a=5;
+//a^2
+//a^21
+
+System.out.println(Math.pow(a, 21));
+
+
+Arrays.sort(arr3);
+System.out.println(Arrays.toString(arr3));
+System.out.println(arr3[arr3.length-1]);
+System.out.println(arr3[0]);
+
+
+
+
+int arr4[]=new int[arr3.length];
+
+ 
+//siralamayi buyukten kucuge yapiniz
+for (int i =arr3.length-1; i >= 0; i--) {
+
+	//System.out.println(arr3.length-1-i+"   Formuldeki degisim");
+	//System.out.println(i+"   i deki degisim");
+	
+	
+     arr4[arr3.length-1-i]=arr3[i];
+	
+}
+
+System.out.println(Arrays.toString(arr4));
+
+
+
+int arr5[]=arr4;
+
+
+arr5[0]=111;
+
+System.out.println(Arrays.toString(arr4));
 
 
 	}
