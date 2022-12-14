@@ -74,11 +74,18 @@ public class Arrays_01 {
 		arr3[3]=15;
 		arr3[4]=20;
 		
-		System.out.println(Arrays.toString(arr3));
+		
+		
+		
+		
+
+		
+		System.out.println(Arrays.toString(arr3)+   "   arr3");
 		
 		int arr4[]= {10,20,30,40,50,70};
 		
 		arr4[4]=60;
+		
 	
 		
 		
