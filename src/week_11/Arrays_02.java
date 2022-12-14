@@ -62,7 +62,7 @@ int a=5;
 System.out.println(Math.pow(a, 21));
 
 
-Arrays.sort(arr3);
+Arrays.sort(arr3);  // dogal siralama yapar 
 System.out.println(Arrays.toString(arr3));
 System.out.println(arr3[arr3.length-1]);
 System.out.println(arr3[0]);
@@ -95,6 +95,13 @@ arr5[0]=111;
 
 System.out.println(Arrays.toString(arr4));
 
+
+char charr []= {'z','j', 'k','a','f'};
+System.out.println(Arrays.toString(charr));
+
+Arrays.sort(charr);
+
+System.out.println(Arrays.toString(charr));
 
 	}
 
