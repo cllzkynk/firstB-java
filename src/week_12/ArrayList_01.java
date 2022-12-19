@@ -1,7 +1,9 @@
 package week_12;
 
 import java.util.ArrayList;
+
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayList_01 {
@@ -101,8 +103,40 @@ public class ArrayList_01 {
 		System.out.println(list1.get(0));
 		System.out.println(list1.get(6));
  
+		//contains() arraylistte aradigimiz elamanin var olup olmadigini doner
+		System.out.println(list1.contains("Can"));
+		System.out.println(list1.contains("Canx"));
+		
+		
+		//Collections.sort(); arraylisti siralamak icin kullanilir.
+		System.out.println(list1);
+		Collections.sort(list1);
+		System.out.println(list1);
+		
+		//equals(); iki farkli listeyi karsilastirmak  icin kullanabvilirz
+		ArrayList<String> list5 = new ArrayList<String>();
+		list5.add("Zu");
+		list5.add("Ali");
+		list5.add("Can");
+		list5.add("Su");
+		list5.add("Ay");
+		list5.add("Ha");
+		list5.add("Huhu");
+		list5.add("Su");
+		
+		list1.add("Su");
+		System.out.println(list1);
+		Collections.sort(list1);
+		System.out.println(list1);
+		Collections.sort(list5);
+		
+		System.out.println(list5);
+		
+		
 		
 
+		
+		
 	}
 
 }
