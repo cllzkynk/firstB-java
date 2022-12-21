@@ -114,6 +114,7 @@ public class ArrayList_01 {
 		System.out.println(list1);
 		
 		//equals(); iki farkli listeyi karsilastirmak  icin kullanabvilirz
+		//karsilastirma yapmadan evvel mutlaka sort etmeliyiz
 		ArrayList<String> list5 = new ArrayList<String>();
 		list5.add("Zu");
 		list5.add("Ali");
@@ -125,18 +126,50 @@ public class ArrayList_01 {
 		list5.add("Su");
 		
 		list1.add("Su");
+		 
+		
+		System.out.println(list1.equals(list5));
+		
 		System.out.println(list1);
-		Collections.sort(list1);
-		System.out.println(list1);
-		Collections.sort(list5);
+		 Collections.sort(list1);
+		
+	 
+		
 		
 		System.out.println(list5);
+		 Collections.sort(list5);
+		
+		 System.out.println(list5);
+		
+	 
+		System.out.println(list1.equals(list5));
+		
+		
+		//clear() listedeki tum elemanlari siler
+		//return type i void dir geri bisi donmez.
+		
+		ArrayList<String> list6 = new ArrayList<String>();
+		list6.add("Zu");
+		list6.add("Ali");
+		list6.add("Can");
+		list6.add("Su");
+		list6.add("Ay");
+		list6.add("Ha");
+		list6.add("Huhu");
+		list6.add("Su");
 		
 		
 		
+		 System.out.println(list6);
+		
+list6.clear();
+		
+System.out.println(list6);	
 
-		
-		
+ 
+
 	}
+
+ 
 
 }
