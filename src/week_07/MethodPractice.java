@@ -1,8 +1,15 @@
 package week_07;
 
 public class MethodPractice {
+	
+	
+	
+	
 
-	public static void main(String[] args) {
+      public	  static   void main(String[] args) {
+		
+		
+		
 		 /*
         Problem Tanımı :
         farklı 4 öğrencinin sırasıyla 3 yazılı notlarının ortalamasını

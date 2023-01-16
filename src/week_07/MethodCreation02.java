@@ -3,6 +3,9 @@ package week_07;
 import java.util.Scanner;
 
 public class MethodCreation02 {
+	
+	
+	
 
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
@@ -34,7 +37,7 @@ public class MethodCreation02 {
 
 	}
 
-	public static String kimlikGoster(String x, String y, String z) {
+	public static  String kimlikGoster(String x, String y, String z) {
 		x=x.trim();
 		y=y.trim();
 
@@ -52,7 +55,7 @@ public class MethodCreation02 {
 	}
 
 
-	public static boolean karar(String x, String y, String z) {
+	public static  boolean karar(String x, String y, String z) {
 		
 		
 		
