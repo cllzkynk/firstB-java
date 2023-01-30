@@ -21,7 +21,6 @@ public Books(int kitapNo,String kitapAdi,String yazarAdi,double kitapFiyati) {
 		this.kitapAdi =kitapAdi;
 		this.yazarAdi=yazarAdi;
 		this.kitapFiyati=kitapFiyati;
-		
 
 	}
 
@@ -34,17 +33,19 @@ public Books(int kitapNo,String kitapAdi,String yazarAdi,double kitapFiyati) {
 	
 	@Override
 	public String toString() {
-		return "\nKitap adi \t"+kitapAdi+"\nYazar adi \t"+yazarAdi+"\nFiyat \t"+kitapFiyati+"Kitap No \t"+kitapNo+"\n";
+		return "\nKitap :"+kitapAdi+"\nYazar adi :"+yazarAdi+"\nFiyat :"+kitapFiyati+"\nKitap No :"+kitapNo+"\n";
 	}
 
 	public  void kitapEkle() {
 		this.kitapNo++;
-		System.out.println("Kitabin adi: ");
-		this.kitapAdi=scan.nextLine();
-		scan.nextLine();
-		System.out.println("Yazarin  adi: ");
-		this.yazarAdi=scan.nextLine();
-		System.out.println("Kitabin Fiyati : ");
+		System.out.println("Kitabin adi :");
+		this.kitapAdi=scan.next();
+	
+
+ 
+		System.out.println("Yazarin  adi :");
+		this.yazarAdi=scan.next();
+		System.out.println("Kitabin Fiyati :");
 		this.kitapFiyati=scan.nextDouble();
 		
 		Books kitap=new Books(  kitapNo, kitapAdi, yazarAdi,  kitapFiyati);
@@ -59,53 +60,77 @@ public Books(int kitapNo,String kitapAdi,String yazarAdi,double kitapFiyati) {
 	
 	
 	public void numaraIleKitapListele() {
-		System.out.println("Listelenecek kitabin numarasini gir : ");
+		System.out.println("Listelenecek kitabin numarasini gir :");
 		int no=scan.nextInt(); //dummy
+		  boolean flag=false;
 		for (Books book : kitapListesi) {
 			if(book.kitapNo==no) {
+				 flag=true;
 				System.out.println(book);
 				break;
 			}
 			
 		}
+		 if(flag==false) {
+	        	System.out.println("Girilen bilgilerle ortusen kitap bulunamadi");
+	        }
 		
 	}
 	
 	public void bilgilerIleKitabiGoruntule() {
 		System.out.println("Listelemek istedigin kitabin adini yada yazarinin adini giriniz ");
-		String kitapBilgisi=scan.nextLine();
-		scan.nextLine();
-		for (Books book : kitapListesi) {
-			if(book.kitapAdi.equals(kitapBilgisi) || book.yazarAdi.equals(kitapBilgisi)) {
-				System.out.println(book);
+		String kitapBilgisi=scan.next();
+  boolean flag=false;
+   
+        
+        for (Books book : kitapListesi) {
+    		if(book.kitapAdi.equals(kitapBilgisi) || book.yazarAdi.equals(kitapBilgisi)) {
+    	 flag=true;
+    			System.out.println(book);
+    			break;
+    		      }
+    		
+    		}
+        if(flag==false) {
+        	System.out.println("Girilen bilgilerle ortusen kitap bulunamadi");
+        }
+        
+        
+		/* 
+		for (int i = 0; i < kitapListesi.size(); i++) {
+			if(kitapListesi.get(i).kitapAdi.equals(kitapBilgisi)||kitapListesi.get(i).yazarAdi.equals(kitapBilgisi)) {
+				System.out.println(kitapListesi.get(i));
+			 
+				
+		
 				break;
 				
-			}else { //elsenin calisma modu
-				System.out.println("Girilen verilerle eslesen bir kitap bulunamadi.");
-				break;
 			}
-			
-						
-		}
+		 * 
+		 */
+	
 		
-		System.out.println(kitapBilgisi);
-
 		
 	}
 	
 	public void numaraIleKitapSil() {
 		System.out.println("Silinecek kitabin numarasi gir : ");
 		int silinecekNo=scan.nextInt();
-		
+		boolean flag=false;
 		
 		for (Books book : kitapListesi) {
 			if(book.kitapNo==silinecekNo) {
+				 flag=true;
 				kitapListesi.remove(kitapListesi.indexOf(book));
 				System.out.println(book + "  Bu kitap tum bilgileri ile listeden silinmistir");
 				break;
 			}
 			
 		}
+		 if(flag==false) {
+	        	System.out.println("Girilen bilgilerle ortusen kitap bulunamadi");
+	        }
+	        
 		// dommy
 		
 		

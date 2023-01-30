@@ -5,6 +5,10 @@ import java.util.Scanner;
 import week_05.SwitchCaseStatement;
 
 public class Main {
+	
+	//Bu projede dummy e DIKKAT !!!!
+	
+	
 	/*
 	 * 
 	 * Bir kitapci icin program yapalim Kitap no 1000'den baslayarak sirali no olsun
@@ -19,14 +23,14 @@ public class Main {
 
 		Scanner scan = new Scanner(System.in);
 
-		Books bk = new Books();
+		Books bk = new Books(); 
 		System.out.println("Hosgeldin Agam");
 		int secim = 0;
 
 		do {
-			System.out.println("\n------------------------------------------------\n1-\t Kitap ekle"
+			System.out.println("\n------------------------------------------------\n1-\tKitap ekle"
 					+ " \n2- \tNumara ile  kitap goruntule \n3 \tBilgi ile Kitap Goruntule\n"
-					+ "4- \tNumara ile kitap sil\n5- \t Tum kitaplari listele \n6- \tCikis ");
+					+ "4- \tNumara ile kitap sil\n5- \tTum kitaplari listele \n6- \tCikis ");
 
 			secim = scan.nextInt();
 			switch (secim) {
@@ -58,10 +62,11 @@ public class Main {
 
 				do {
 					bk.numaraIleKitapSil();
-					System.out.println("Silmek istediginiz baska kitap varmi evet icin 1 hayir icin 0 giriniz");
+					System.out.println("Silmek istediginiz baska kitap varmi evet icin 1  giriniz");
 					islem = scan.nextByte();
+				
 
-				} while (islem != 0);
+				} while (islem == 1);
 
 				break;
 
