@@ -24,10 +24,12 @@ public Books(int kitapNo,String kitapAdi,String yazarAdi,double kitapFiyati) {
 
 	}
 
-	public Books() {
-		
-// default
-	}
+
+public Books() {
+	
+	// default
+}
+
 
 	
 	
