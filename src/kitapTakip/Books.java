@@ -51,6 +51,8 @@ public Books() {
 		this.kitapFiyati=scan.nextDouble();
 		
 		Books kitap=new Books(  kitapNo, kitapAdi, yazarAdi,  kitapFiyati);
+		//public Books(int kitapNo,String kitapAdi,String yazarAdi,double kitapFiyati) {
+		this.kitapNo=kitapNo;
 		
 		kitapListesi.add(kitap);
 		

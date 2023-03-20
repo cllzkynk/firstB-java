@@ -26,7 +26,7 @@ public class TasKagitMakas {
 				System.out.println("==================================================");
 			}
 			byte bilgisayarinSecimi = (byte) (Math.random() * 4);
-			//bilgiGostermeKosulu = 0;
+		 bilgiGostermeKosulu = 0;
 			 
 			System.out.println("Seciminiz  : ");
 	 
@@ -112,5 +112,6 @@ public class TasKagitMakas {
 	
 	
 	scan.close();
+	
 	}
 }
