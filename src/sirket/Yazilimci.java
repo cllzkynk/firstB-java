@@ -8,6 +8,8 @@ public class Yazilimci extends Calisan {
 	public Yazilimci(String ad, String soyAd, int id, String diller) {
 		super(ad, soyAd, id);
 		this.diller = diller;
+		
+		//constructor
 	}
 	
 	

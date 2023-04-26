@@ -12,23 +12,26 @@ public class SirketRunner {
 				+ "1=Yazilimci islemleri\n"
 				+ "2=Yonetici islemleri\n"
 				+ "Cikis icin X girisi yapiniz";
-		System.out.println(islemler);
+		
 		
 		while(true) {
+			System.out.println(islemler);
 			System.out.println("Islem seciniz ");
 			String islem=scan.nextLine();
 			if(islem.equals("X")) {
 				System.out.println(" Programdan cikiliyor..........");
 				break;
 			}else if(islem.equals("1")) {
-				Yazilimci yazilimci=new Yazilimci("Ibrahim ","Javaci",1,"Java, Pyhton , C,C#,C+,C++");
+				Yazilimci yazilimci=new Yazilimci("Ibrahim ","Javaci ",1,"Java, Pyhton , C,C#,C+,C++ ");
+				Yazilimci yazilimci2=new Yazilimci("Ibrahim ","Javaci ",1,"Java, Pyhton , C,C#,C+,C++ ");
 				String yazilimciIslemleri="Yazilimci Islemleri \n"
 						+ "1=Format at\n"
-						+ "2=Bilgileri Goster"
+						+ "2=Bilgileri Goster\n"
 						+ "Cikis icin X giriniz";
 						
-		System.out.println(yazilimciIslemleri);
+	 
 		while(true) {
+			System.out.println(yazilimciIslemleri);
 			System.out.println("Islem seciniz ");
 			String yIslem=scan.nextLine();
 			if(yIslem.equals("X")) {
@@ -49,13 +52,14 @@ public class SirketRunner {
 				
 				
 			}else if(islem.equals("2")) {
-				Yonetici yonetici=new Yonetici("Celil","Uzunbacak",5,5);
+				Yonetici yonetici=new Yonetici("Celil ","Uzunbacak",5,5);
 				String yIslemleri="Yonetici islemleri\n"
 						+ "1=Zam Yap\n"
 						+ "2=Bilgileri Goster\n"
 						+ "Cikis icin X giriniz";
-				System.out.println(yIslemleri);
+				
 				while(true) {
+					System.out.println(yIslemleri);
 					System.out.println("Islem seciniz ");
 					String yoneticiIslem=scan.nextLine();
 					if(yoneticiIslem.equals("X")) {
@@ -74,7 +78,7 @@ public class SirketRunner {
              }
 
          }else{
-             System.out.println("Yanlış seçim yaptınız. Tekrar deneyiniz..");
+             System.out.println("Yanlış seçim yaptınız. Tekrar deneyiniz...");
          }
      }
      
