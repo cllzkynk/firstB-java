@@ -45,8 +45,17 @@ public class LocalTime_01 {
 		System.out.println(saat.getMinute());
 		
 		
-	System.out.println(saat.now(ZoneId.of("Germany/Berlin")));
+		System.out.println(saat.now(ZoneId.of("America/Chicago")));
+		System.out.println(saat.now(ZoneId.of("Africa/Cairo")).plusHours(1));
 		
+		LocalTime saat4= LocalTime.now();
+		System.out.println(saat4.getHour()+":"+saat4.getMinute());
+		
+		
+ 
+		
+		
+ 
 		
 		
 		
